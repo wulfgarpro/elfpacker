@@ -4,8 +4,9 @@ cc_library(
 )
 
 cc_binary(
-    name = "p4k7",
+    name = "main",
     srcs = ["main.c"],
-    deps = [":p4k7_errors"]
+    deps = [":p4k7_errors"],
+    visibility = ["//visibility:public"],
 )
 
