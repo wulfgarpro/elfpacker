@@ -1,0 +1,16 @@
+Checks: >
+  -*,
+  bugprone-*,
+  cert-*-c,
+  clang-analyzer-*,
+  misc-*,
+  performance-*,
+  readability-*,
+CheckOptions:
+  - { key: bugprone-argument-comment.CommentBoolLiterals, value: true }
+  - { key: bugprone-argument-comment.CommentCharacterLiterals, value: true }
+  - { key: bugprone-argument-comment.CommentFloatLiterals, value: true }
+  - { key: bugprone-argument-comment.CommentIntegerLiterals, value: true }
+  - { key: bugprone-argument-comment.CommentNullPtrs, value: true }
+  - { key: bugprone-argument-comment.CommentStringLiterals, value: true }
+  - { key: bugprone-misplaced-widening-cast.CheckImplicitCasts, value: true }
