@@ -1,12 +1,12 @@
 cc_library(
-    name = "p4k7_errors",
-    hdrs = ["p4k7_errors.h"],
+    name = "errors",
+    hdrs = ["errors.h"],
 )
 
 cc_binary(
     name = "main",
     srcs = ["main.c"],
-    deps = [":p4k7_errors"],
+    deps = [":errors"],
     visibility = ["//visibility:public"],
 )
 

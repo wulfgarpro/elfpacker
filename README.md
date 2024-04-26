@@ -1,3 +1,3 @@
-# p4k7
+# elfpacker
 
 An ELF packer for the masses.
