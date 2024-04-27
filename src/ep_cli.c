@@ -1,4 +1,4 @@
-#include "cli.h"
+#include "ep_cli.h"
 
 #include <getopt.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@ static void usage(FILE* stream)
     exit(stream == stdout ? 0 : 1);
 }
 
-void parse_cli_args(int argc, char* argv[], struct cli_args* cli_args)
+void parse_cli_args(int argc, char* argv[], struct ep_cli_args* cli_args)
 {
     int opt = 0;
 

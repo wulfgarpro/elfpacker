@@ -1,20 +1,20 @@
 cc_library(
-    name = "errors",
-    hdrs = ["errors.h"],
+    name = "ep_errors",
+    hdrs = ["ep_errors.h"],
     visibility = ["//visibility:private"],
 )
 
 cc_library(
-    name = "cli",
-    hdrs = ["cli.h"],
-    srcs = ["cli.c"],
+    name = "ep_cli",
+    hdrs = ["ep_cli.h"],
+    srcs = ["ep_cli.c"],
     visibility = ["//visibility:private"],
 )
 
 cc_binary(
     name = "elfpacker",
     srcs = ["main.c"],
-    deps = [":errors", ":cli"],
+    deps = [":ep_errors", ":ep_cli"],
     copts = ["-Wall", "-Wextra", "-Werror"],
     visibility = ["//visibility:public"],
 )
