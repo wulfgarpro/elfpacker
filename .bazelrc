@@ -1,0 +1,9 @@
+build:debug --compilation_mode=dbg
+build:debug --copt=-g
+build:debug --define=DEBUG=true
+build:debug --strip=never
+
+build:release --compilation_mode=opt
+build:release --copt=-O2
+build:release --define=RELEASE=true
+build:release --strip=always
