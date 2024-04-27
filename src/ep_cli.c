@@ -22,7 +22,7 @@ void parse_cli_args(int argc, char* argv[], struct ep_cli_args* cli_args)
 {
     int opt = 0;
 
-    if (argc < 2) {
+    if (argc < 1) {
         usage(stderr);
     }
 
