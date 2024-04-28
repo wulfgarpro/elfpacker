@@ -26,11 +26,11 @@ case $1 in
     ;;
   run-debug)
     log "Running the project in debug mode..."
-    bazel run //src:elfpacker --config=debug
+    bazel run //src:elfpacker --config=debug -- "$@"
     ;;
   run-release)
     log "Running the project in release mode..."
-    bazel run //src:elfpacker --config=release
+    bazel run //src:elfpacker --config=release -- "$@"
     ;;
   clean)
     log "Cleaning build artifacts..."
@@ -39,7 +39,7 @@ case $1 in
   debug-gdb)
     log "Launching GDB to debug the project..."
     bazel build //src:elfpacker --config=debug
-    gdb bazel-bin/src/elfpacker
+    gdb --args bazel-bin/src/elfpacker "$@"
     ;;
   *)
     usage
