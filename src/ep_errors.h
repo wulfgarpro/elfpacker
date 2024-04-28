@@ -3,6 +3,10 @@
 
 enum ep_error {
     EP_ERROR_SUCCESS = 0,
+    EP_ERROR_STAT_FAILED = 1,
+    EP_ERROR_MALLOC_FAILED = 2,
+    EP_ERROR_FOPEN_FAILED = 3,
+    EP_ERROR_NOT_ISREG = 4
 };
 
 #endif // EP_ERRORS_H
