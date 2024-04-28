@@ -1,3 +1,3 @@
 # elfpacker
 
-An ELF packer for the masses.
+A software packer for ELF format.
