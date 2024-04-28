@@ -11,7 +11,7 @@ static struct option options[] = { { "src-file", required_argument, 0, 0 },
 
 static void usage(FILE* stream)
 {
-    (void)fprintf(stream, "Usage: %s <options(s)> src-file\n", program_name);
+    (void)fprintf(stream, "Usage: %s <options(s)> -s src-file\n", program_name);
     //(void)fprintf(stream, (" Options:\n"));
     //(void)fprintf(stream, ("  -X --XXX     XXX\n"));
 
