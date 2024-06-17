@@ -1,0 +1,24 @@
+#include "ep_cli.h"
+<<<<<<< Updated upstream
+
+int main(int argc, char* argv[])
+{
+=======
+#include "ep_io.h"
+#include <stdlib.h>
+#include <stdbool.h>
+
+int main(int argc, char* argv[])
+{
+    bool err = false;
+
+>>>>>>> Stashed changes
+    struct ep_cli_args cli_args = { 0 };
+    parse_cli_args(argc, argv, &cli_args);
+
+    struct ep_io_data* io_data = NULL;
+    err = open_elf_file(cil_args.src_file, &io_data);
+    free(io_data);
+
+    return err ? EXIT_FAILURE : EXIT_SUCCESS;
+}
